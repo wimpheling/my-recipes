@@ -3,7 +3,7 @@ title: "Sorbet Pastèque"
 author: "Mercotte"
 date: 2026-07-18
 tags: ["dessert", "sorbet", "pastèque", "light", "glace"]
-recipe_image: "goebbels.jpg"
+recipe_image: "juan-branco.jpg"
 image_width: 512
 image_height: 512
 tagline: "Un sorbet pastèque rafraîchissant, peu sucré, prêt en un tour de sorbetière."
