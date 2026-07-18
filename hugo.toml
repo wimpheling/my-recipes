@@ -1,0 +1,42 @@
+baseURL = "https://wimpheling.github.io/my-recipes/"
+locale = "fr_FR"
+title = "Mes Recettes"
+theme = "cookbook"
+
+[params.front]
+defaultAuthor = "Bully"
+defaultImage = "/images/defaultImage.png"
+defaultImageHeight = 512
+defaultImageWidth = 512
+
+[params.logo]
+fileName = ""
+height = 50
+width = 200
+
+[params.favicon]
+fileName = "/images/favicon.svg"
+
+[params]
+  author = "Bully"
+
+[[menu.main]]
+  name = "Catégories"
+  pre = "fas fa-tags"
+  url = "/tags/"
+  weight = 1
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "PRINT"]
+
+[outputFormats]
+[outputFormats.print]
+  name = "print"
+  mediaType = "text/html"
+  baseName = "print/index"
+  isPlainText = false
+  rel = "print"
+  isHTML = true
+  noUgly = true
+  permalinkable = true

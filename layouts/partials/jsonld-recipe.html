@@ -1,0 +1,71 @@
+{{- if .IsPage -}}
+{{- $recipe := dict "@context" "https://schema.org" "@type" "Recipe" "name" .Title -}}
+
+{{- with .Params.tagline }}{{ $recipe = merge $recipe (dict "description" .) }}{{ end -}}
+{{- $img := .Params.image | default .Params.recipe_image -}}
+{{- with $img }}{{ $recipe = merge $recipe (dict "image" (. | absURL)) }}{{ end -}}
+
+{{- with .Params.author }}{{ $recipe = merge $recipe (dict "author" (dict "@type" "Person" "name" .)) }}{{ end -}}
+
+{{- $recipe = merge $recipe (dict "datePublished" (.Date.Format "2006-01-02")) -}}
+
+{{- with .Params.prep_time -}}
+  {{- $recipe = merge $recipe (dict "prepTime" (printf "PT%vM" .)) -}}
+{{- end -}}
+
+{{- with .Params.cook_time -}}
+  {{- $inc := $.Params.cook_increment | default "Minutes" -}}
+  {{- if eq $inc "Hours" -}}
+    {{- $recipe = merge $recipe (dict "cookTime" (printf "PT%vH" .)) -}}
+  {{- else -}}
+    {{- $recipe = merge $recipe (dict "cookTime" (printf "PT%vM" .)) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with .Params.servings -}}
+  {{- $recipe = merge $recipe (dict "recipeYield" (printf "%v" .)) -}}
+{{- end -}}
+
+{{- with .Params.tags -}}
+  {{- $recipe = merge $recipe (dict "keywords" (delimit . ", ")) -}}
+  {{- if gt (len .) 0 -}}
+    {{- $recipe = merge $recipe (dict "recipeCategory" (index . 0)) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with .Params.calories -}}
+  {{- $recipe = merge $recipe (dict "nutrition" (dict "@type" "NutritionInformation" "calories" (printf "%v calories" .))) -}}
+{{- end -}}
+
+{{- /* Structured ingredients */ -}}
+{{- $ingredients := slice -}}
+{{- range .Params.ingredients -}}
+  {{- range .items -}}
+    {{- $qty := .qty | default "" -}}
+    {{- $unit := .unit | default "" -}}
+    {{- $name := .item | default "" -}}
+    {{- $line := "" -}}
+    {{- if $qty }}{{ $line = printf "%s %s" (string $qty) $unit }}{{ else }}{{ $line = $unit }}{{ end -}}
+    {{- if and $line $name }}{{ $line = printf "%s %s" $line $name }}{{ else }}{{ $line = $name }}{{ end -}}
+    {{- $ingredients = $ingredients | append (trim $line " ") -}}
+  {{- end -}}
+{{- end -}}
+{{- if gt (len $ingredients) 0 -}}
+  {{- $recipe = merge $recipe (dict "recipeIngredient" $ingredients) -}}
+{{- end -}}
+
+{{- /* Structured directions / instructions (HowToStep) */ -}}
+{{- $steps := slice -}}
+{{- range $i, $step := .Params.directions -}}
+  {{- if $step -}}
+    {{- $steps = $steps | append (dict "@type" "HowToStep" "position" (add $i 1) "text" $step) -}}
+  {{- end -}}
+{{- end -}}
+{{- if gt (len $steps) 0 -}}
+  {{- $recipe = merge $recipe (dict "recipeInstructions" $steps) -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{{ $recipe | jsonify (dict "indent" "    ") | safeJS }}
+</script>
+{{- end -}}

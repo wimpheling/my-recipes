@@ -1,0 +1,86 @@
+{{ define "main" }}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 recipe-detail-card">
+            <div class="d-flex justify-content-center recipe-image-bg">
+                <figure class="figure">
+                    {{ $img := .Params.image | default .Params.recipe_image | default "" }}
+                    {{ if $img }}
+                    <img class="figure-img img-fluid rounded" style="max-height: 512px;"
+                        src="{{ $img | relURL }}" alt="{{ .Title }}">
+                    {{ end }}
+                </figure>
+                <div id="printButton" style="position: absolute; bottom: 0; right: 0;" class="rounded-circle">
+                    {{ with .OutputFormats.Get "print" }}
+                    <a href="{{ $.RelPermalink }}print/" target="_blank"><i
+                            class="fas fa-print fa-2x m-3 printButton"></i></a>
+                    {{ end }}
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h1 class="fw-bold">{{ .Title }}</h1>
+                <p class="fst-italic">{{ .Params.Author }}</p>
+                <div class="text-end">
+                    {{ partial "metadata.html" . }}
+                </div>
+                <hr>
+            </div>
+            <div class="text-center">
+                {{ partial "statstable.html" . }}
+            </div>
+            <hr>
+            {{ with .Params.tagline }}
+            <p class="fst-italic">{{ . }}</p>
+            <hr>
+            {{ end }}
+
+            {{/* Ingredients from front matter */}}
+            <h2>Ingrédients</h2>
+            {{ range .Params.ingredients }}
+                {{ with .section }}
+                <h4>{{ . }}</h4>
+                {{ end }}
+                <ul>
+                {{ range .items }}
+                    {{ $qty := .qty | default "" }}
+                    {{ $unit := .unit | default "" }}
+                    {{ $item := .item | default "" }}
+                    {{ $line := "" }}
+                    {{ if $qty }}{{ $line = printf "%s %s" (string $qty) $unit }}{{ else }}{{ $line = $unit }}{{ end }}
+                    {{ if and $line $item }}{{ $line = printf "%s %s" (trim $line " ") $item }}{{ else }}{{ $line = $item }}{{ end }}
+                    <li>{{ trim $line " " }}</li>
+                {{ end }}
+                </ul>
+            {{ end }}
+
+            {{/* Directions from front matter */}}
+            <h2>Préparation</h2>
+            <ol>
+            {{ range .Params.directions }}
+                {{ with . }}
+                <li>{{ . | markdownify }}</li>
+                {{ end }}
+            {{ end }}
+            </ol>
+
+            {{/* Notes */}}
+            {{ with .Params.notes }}
+            <hr>
+            <div class="alert alert-info">
+                <h4>Notes</h4>
+                {{ . | markdownify }}
+            </div>
+            {{ end }}
+
+            {{/* Fallback: render .Content if no front matter data */}}
+            {{ if not .Params.ingredients }}
+            <div class="content">
+                {{ .Content }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ partial "jsonld-recipe.html" . }}
+{{ end }}
