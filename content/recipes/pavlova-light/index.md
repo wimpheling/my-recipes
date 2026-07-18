@@ -10,7 +10,7 @@ tagline: "La pavlova allégée de Mercotte — meringue réduite en sucre, garni
 servings: 8
 prep_time: 20
 cook_time: 60
-calories: 220
+calories: 207
 ingredients:
   - section: "Meringue"
     items:
@@ -53,5 +53,5 @@ directions:
   - "Enfourner 1h à 120°C. Ne pas ouvrir le four."
   - "Éteindre le four et laisser refroidir complètement à l'intérieur, porte entrouverte (1h ou toute la nuit)."
   - "Au moment de servir, garnir la meringue de chantilly en bombe et de fruits frais. Servir immédiatement."
-notes: "La meringue doit refroidir dans le four éteint pour éviter les fissures. La bombe de chantilly, c'est moins calorique que la crème montée maison, et zéro vaisselle. Garnir au dernier moment car la chantilly en bombe tient moins bien."
+notes: "La meringue doit refroidir dans le four éteint pour éviter les fissures. La bombe de chantilly, c'est moins calorique que la crème montée maison, et zéro vaisselle. Garnir au dernier moment car la chantilly en bombe tient moins bien.\n\n**Calories** : ~170 kcal/100g | ~207 kcal/portion (8 parts) | ~1653 kcal la pavlova entière. Soit 35% de moins que la pavlova classique."
 ---

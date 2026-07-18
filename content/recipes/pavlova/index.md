@@ -53,5 +53,5 @@ directions:
   - "Éteindre le four et laisser la meringue refroidir complètement à l'intérieur, porte entrouverte (1 heure ou idéalement toute la nuit)."
   - "Monter la crème liquide bien froide avec le sucre glace et la vanille grattée (vitesse 3-4) jusqu'à obtenir une chantilly ferme — ne pas trop battre."
   - "Au moment de servir, garnir la meringue refroidie de chantilly et de fruits frais. Servir immédiatement."
-notes: "**Le secret** : la meringue doit refroidir DANS le four éteint pour éviter qu'elle ne fissure. Si vous la préparez la veille, gardez-la dans le four éteint toute la nuit et garnissez-la juste avant de servir. Les quantités de sucre ne sont pas à réduire — le sucre est essentiel à la structure de la meringue."
+notes: "**Le secret** : la meringue doit refroidir DANS le four éteint pour éviter qu'elle ne fissure. Si vous la préparez la veille, gardez-la dans le four éteint toute la nuit et garnissez-la juste avant de servir. Les quantités de sucre ne sont pas à réduire — le sucre est essentiel à la structure de la meringue.\n\n**Calories** : ~227 kcal/100g | ~320 kcal/portion (8 parts) | ~2767 kcal la pavlova entière."
 ---
