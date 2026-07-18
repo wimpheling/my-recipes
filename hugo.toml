@@ -9,13 +9,11 @@ defaultImage = "/images/defaultImage.png"
 defaultImageHeight = 512
 defaultImageWidth = 512
 
-[params.logo]
-fileName = ""
-height = 50
-width = 200
-
 [params.favicon]
 fileName = "/images/favicon.svg"
+
+[params.navText]
+text = "🍳 Mes Recettes"
 
 [params]
   author = "Bully"
