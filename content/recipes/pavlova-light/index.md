@@ -3,7 +3,9 @@ title: "Pavlova Light"
 author: "Mercotte"
 date: 2026-07-18
 tags: ["dessert", "meringue", "fruits", "light"]
-recipe_image: ""
+recipe_image: "britney.jpg"
+image_width: 512
+image_height: 512
 tagline: "La pavlova allégée de Mercotte — meringue réduite en sucre, garnie de chantilly du commerce et de fruits rouges."
 servings: 8
 prep_time: 20
