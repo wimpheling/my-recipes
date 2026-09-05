@@ -59,7 +59,7 @@ directions:
   - "**Farce** : Dans un bol, fouetter les œufs avec le sucre. Ajouter le beurre mou, la farine, le lait et la vanille. Mélanger jusqu'à consistance lisse."
   - "Cuire la farce au bain-marie (ou au micro-ondes par intervalles de 20s en remuant) jusqu'à ce qu'elle épaississe — environ 3-5 min. Filmer au contact et réserver au frais 30 min."
   - "**Pâte** : Délayer la levure dans le lait tiède avec une pincée de sucre. Laisser reposer 5 min jusqu'à ce que ça mousse."
-  - "Mélanger farine, sucre, sel. Ajouter le lait levuré, le beurre fondu et le colorant rose. Pétrir 8-10 min (au robot Kenwood avec le crochet) jusqu'à une pâte lisse et élastique."
+  - "Mélanger farine, sucre, sel dans le bol du Kenwood. Ajouter le lait levuré, le beurre fondu et le colorant rose. Pétrir au crochet 8-10 min jusqu'à une pâte lisse et élastique."
   - "Couvrir d'un torchon et laisser lever 1h dans un endroit tiède — la pâte double de volume."
   - "Dégazer la pâte, diviser en 4 parts égales (~70g chacune). Aplatir chaque part en disque, déposer une grosse cuillère de farce au centre (~2 càs). Refermer soigneusement en pinçant les bords."
   - "**Déco cochon** : Avec des petites boules de pâte crue (réservée avant séparation), façonner les oreilles (triangles), le nez (cercle aplati) et les yeux (petites billes). Les coller avec un peu d'eau. Faire 2 petits trous de narines dans le nez avec la pointe d'un cure-dent."
