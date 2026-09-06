@@ -24,6 +24,12 @@ text = "🍳 Mes Recettes"
   url = "/tags/"
   weight = 1
 
+[[menu.main]]
+  name = "Vendredi Sandwich 🪴"
+  pre = "fas fa-utensils"
+  url = "/vendredi-sandwich/"
+  weight = 2
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML", "PRINT"]
