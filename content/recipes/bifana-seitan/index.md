@@ -1,7 +1,7 @@
 ---
 title: "Bifana de Seitan 🇵🇹"
 author: "Gordon Ramsay"
-date: 2026-09-07
+date: 2026-09-06
 tags: ["portugais", "sandwich", "végétarien", "seitan", "vendredi-sandwich"]
 recipe_image: ""
 image_width: 512

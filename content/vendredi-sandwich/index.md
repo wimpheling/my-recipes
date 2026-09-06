@@ -1,9 +1,8 @@
 ---
 title: "🍞 Vendredi Sandwich — Tour du monde du sandwich distingué"
 author: "Gordon Ramsay"
-date: 2026-09-07
+date: 2026-09-06
 tags: ["vendredi-sandwich", "index"]
-type: "page"
 ---
 
 Un rdv fixe chaque vendredi pour faire le tour du monde du sandwich fait maison. Pain distingué, garniture soignée, inspiration voyage.
