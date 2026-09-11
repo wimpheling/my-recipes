@@ -1,0 +1,40 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://kit.fontawesome.com">
+    <link rel="icon" type="image/svg+xml" href="{{ "/images/favicon.svg" | urlize | relURL}}">
+    <script src="https://kit.fontawesome.com/b7002cebe4.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/cosmo/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uP6uiZz9HVllaNH5ty2qx0JUECCgFzU15rvtawVZqrnzZWNGP+XHPP4Fx9qT//AN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ "/css/custom.css" | urlize | relURL}}">
+
+    {{ $title := print .Site.Title " | " .Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+
+    {{- $description := .Site.Params.description | default .Site.Title -}}
+    {{- with .Params.Tagline }}{{ $description = . }}{{ end -}}
+    {{- $image := .Site.Params.logo.fileName | default "/images/defaultImage.png" | absURL -}}
+    {{- $imgParam := .Params.image | default .Params.recipe_image -}}
+    {{- with $imgParam -}}
+        {{- $resource := $.Resources.GetMatch . -}}
+        {{- if $resource }}{{ $image = $resource.Permalink }}{{ else }}{{ $image = . | absURL }}{{ end -}}
+    {{- end -}}
+    <meta name="description" content="{{ $description }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta property="og:title" content="{{ $title }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ $image }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $title }}">
+    <meta name="twitter:description" content="{{ $description }}">
+    <meta name="twitter:image" content="{{ $image }}">
+</head>

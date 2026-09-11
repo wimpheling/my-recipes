@@ -3,7 +3,12 @@
 
 {{- with .Params.tagline }}{{ $recipe = merge $recipe (dict "description" .) }}{{ end -}}
 {{- $img := .Params.image | default .Params.recipe_image -}}
-{{- with $img }}{{ $recipe = merge $recipe (dict "image" (. | absURL)) }}{{ end -}}
+{{- with $img -}}
+{{- $resource := $.Resources.GetMatch . -}}
+{{- $imageURL := . | absURL -}}
+{{- if $resource }}{{ $imageURL = $resource.Permalink }}{{ end -}}
+{{- $recipe = merge $recipe (dict "image" $imageURL) }}
+{{- end -}}
 
 {{- with .Params.author }}{{ $recipe = merge $recipe (dict "author" (dict "@type" "Person" "name" .)) }}{{ end -}}
 

@@ -6,8 +6,9 @@
                 <figure class="figure">
                     {{ $img := .Params.image | default .Params.recipe_image | default "" }}
                     {{ if $img }}
+                    {{ $resource := .Resources.GetMatch $img }}
                     <img class="figure-img img-fluid rounded" style="max-height: 512px;"
-                        src="{{ $img | relURL }}" alt="{{ .Title }}">
+                        src="{{ if $resource }}{{ $resource.RelPermalink }}{{ else }}{{ $img | relURL }}{{ end }}" alt="{{ .Title }}">
                     {{ end }}
                 </figure>
                 <div id="printButton" style="position: absolute; bottom: 0; right: 0;" class="rounded-circle">

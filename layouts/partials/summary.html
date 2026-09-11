@@ -4,8 +4,9 @@
             <figure class="figure m-0">
                 {{ $img := .Params.image | default .Params.recipe_image | default "" }}
                 {{ if $img }}
-                <img class="figure-img img-fluid fixed-image" src="{{ $img | relURL }}"
-                    alt="{{ $.Title }}" loading="lazy">
+                    {{ $resource := .Resources.GetMatch $img }}
+                    <img class="figure-img img-fluid fixed-image" src="{{ if $resource }}{{ $resource.RelPermalink }}{{ else }}{{ $img | relURL }}{{ end }}"
+                        alt="{{ $.Title }}" loading="lazy">
                 {{ end }}
             </figure>
         </div>
