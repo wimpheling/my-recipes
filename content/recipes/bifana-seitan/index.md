@@ -3,9 +3,9 @@ title: "Bifana de Seitan 🇵🇹"
 author: "Gordon Ramsay"
 date: 2026-09-11
 tags: ["portugais", "sandwich", "végétarien", "seitan", "vendredi-sandwich"]
-recipe_image: ""
-image_width: 512
-image_height: 512
+recipe_image: "bifana-plate.jpg"
+image_width: 1280
+image_height: 960
 tagline: "Bifana de seitan façon braisée — oignons fondants, bière 0%, pas de marinade, du jus qui imbibe le pain"
 servings: 3
 prep_time: 10
