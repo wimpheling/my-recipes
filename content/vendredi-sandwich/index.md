@@ -13,7 +13,7 @@ Un rdv fixe chaque vendredi pour faire le tour du monde du sandwich fait maison.
 ✅ En ligne — [Bifana de Seitan](/my-recipes/recipes/bifana-seitan/)
 
 ## #2 — 🇻🇳 Bánh mì
-*(à venir)*
+✅ En ligne — [Bánh Mì Bò Nướng](/my-recipes/recipes/banh-mi-bo-nuong/)
 
 ## #3 — 🇯🇵 Katsu Sando
 *(à venir)*
