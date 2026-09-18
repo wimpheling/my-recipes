@@ -12,67 +12,70 @@ Un rdv fixe chaque vendredi pour faire le tour du monde du sandwich fait maison.
 ## #1 — 🇵🇹 Bifana de Seitan
 ✅ En ligne — [Bifana de Seitan](/my-recipes/recipes/bifana-seitan/)
 
-## #2 — 🇻🇳 Bánh mì
+## #2 — 🇵🇹 Frango com Pimentão
+✅ En ligne — [Frango com Pimentão](/my-recipes/recipes/frango-pimentao/)
+
+## #3 — 🇻🇳 Bánh mì
 ✅ En ligne — [Bánh Mì Bò Nướng](/my-recipes/recipes/banh-mi-bo-nuong/)
 
-## #3 — 🇯🇵 Katsu Sando
+## #4 — 🇯🇵 Katsu Sando
 *(à venir)*
 
-## #4 — 🇲🇽 Taco al Pastor
+## #5 — 🇲🇽 Taco al Pastor
 *(à venir)*
 
-## #5 — 🇨🇳 Bao porc laqué (Char Siu)
+## #6 — 🇨🇳 Bao porc laqué (Char Siu)
 *(à venir)*
 
-## #6 — 🇹🇳 Tunisien (thon-harissa-frites)
+## #7 — 🇹🇳 Tunisien (thon-harissa-frites)
 *(à venir)*
 
-## #7 — 🇺🇸 Smash burger bun brioché
+## #8 — 🇺🇸 Smash burger bun brioché
 *(à venir)*
 
-## #8 — 🇺🇸 Bagel saumon fumé
+## #9 — 🇺🇸 Bagel saumon fumé
 *(à venir)*
 
-## #9 — 🇬🇷 Gyros pita maison
+## #10 — 🇬🇷 Gyros pita maison
 *(à venir)*
 
-## #10 — 🇮🇹 Panino porchetta
+## #11 — 🇮🇹 Panino porchetta
 *(à venir)*
 
-## #11 — 🇩🇰 Flæskestegssandwich
+## #12 — 🇩🇰 Flæskestegssandwich
 *(à venir)*
 
-## #12 — 🇱🇧 Kafta bi ktef
+## #13 — 🇱🇧 Kafta bi ktef
 *(à venir)*
 
-## #13 — 🇲🇾 Roti canai sandwich
+## #14 — 🇲🇾 Roti canai sandwich
 *(à venir)*
 
-## #14 — 🇧🇷 Pão de queijo farci
+## #15 — 🇧🇷 Pão de queijo farci
 *(à venir)*
 
-## #15 — 🇮🇳 Naan kebab
+## #16 — 🇮🇳 Naan kebab
 *(à venir)*
 
-## #16 — 🇮🇳 Vada pav
+## #17 — 🇮🇳 Vada pav
 *(à venir)*
 
-## #17 — 🇻🇳 Bánh cuốn wrap
+## #18 — 🇻🇳 Bánh cuốn wrap
 *(à venir)*
 
-## #18 — 🇲🇽 Cemita poblana
+## #19 — 🇲🇽 Cemita poblana
 *(à venir)*
 
-## #19 — 🇫🇷 Pan bagnat
+## #20 — 🇫🇷 Pan bagnat
 *(à venir)*
 
-## #20 — 🇻🇪 Arepa farcie
+## #21 — 🇻🇪 Arepa farcie
 *(à venir)*
 
-## #21 — 🇹🇼 Gua Bao
+## #22 — 🇹🇼 Gua Bao
 *(à venir)*
 
-## #22 — 🇹🇷 Kokoreç
+## #23 — 🇹🇷 Kokoreç
 *(à venir)*
 
 ---
