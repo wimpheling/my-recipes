@@ -3,7 +3,7 @@ title: "Baos Cochon Rose (奶黄包) — Farce Custard ou Lemon Curd"
 author: "Bully"
 date: 2026-09-05
 tags: ["chinois", "vapeur", "bao", "enfant", "custard", "rose", "citron"]
-recipe_image: ""
+recipe_image: "bao-cochon-rose.jpg"
 image_width: 512
 image_height: 512
 tagline: "Petits baos rose cochon moelleux — choisissez votre farce : custard au jaune d'œuf classique ou lemon curd acidulé !"
