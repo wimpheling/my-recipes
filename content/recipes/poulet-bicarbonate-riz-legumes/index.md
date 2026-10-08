@@ -6,7 +6,7 @@ tags: ["poulet", "bicarbonate", "riz", "légumes", "chinois", "vapeur"]
 recipe_image: ""
 image_width: 800
 image_height: 600
-tagline: "Blanc de poulet hyper moelleux grâce à la technique du velvet chicken au bicarbonate, sauté avec des légumes vapeur et servi sur du riz basmati."
+tagline: "Blanc de poulet hyper moelleux grâce à la technique du velvet chicken au bicarbonate, sauté avec des légumes vapeur et des spring onions, servi sur du riz basmati."
 servings: 4
 prep_time: 25
 cook_time: 20
@@ -54,6 +54,9 @@ ingredients:
       - qty: 10
         unit: g
         item: "gingembre (râpé)"
+      - qty: 2
+        unit: ""
+        item: "spring onions (cébettes), émincées"
       - qty: ""
         unit: ""
         item: "sel, poivre"
@@ -63,7 +66,7 @@ directions:
   - "**Riz** : Cuire le riz basmati selon les instructions (absorption ou à l'eau)."
   - "**Légumes vapeur** : Cuire le brocoli, la carotte et le poivron à la vapeur 3-4 min. Réserver."
   - "**Poulet** : Chauffer 1 càs d'huile dans un wok ou une grande poêle à feu vif. Saisir le poulet 2-3 min, en remuant pour qu'il cuise uniformément. Il doit rester tendre et à peine doré. Sortir et réserver."
-  - "**Sauté final** : Ajouter 1 càs d'huile dans le wok, faire revenir l'ail et le gingembre 30 sec. Remettre le poulet et les légumes vapeur. Assaisonner avec un trait de sauce soja, sel et poivre. Mélanger 1 min à feu vif."
+  - "**Sauté final** : Ajouter 1 càs d'huile dans le wok, faire revenir l'ail, le gingembre et les spring onions 30 sec. Remettre le poulet et les légumes vapeur. Assaisonner avec un trait de sauce soja, sel et poivre. Mélanger 1 min à feu vif."
   - "Servir le poulet sauté sur le riz."
 notes: "**Bicarbonate** : c'est la technique classique chinoise du velvet chicken. Le bicarbonate alcalinise la surface du poulet, empêchant les protéines de se resserrer à la cuisson → résultat hyper moelleux. Ne pas dépasser 15 min de repos et bien rincer, sinon goût savonneux. Idéal pour blancs de poulet qui ont tendance à sécher.\\n\\n**Légumes** : tu peux varier selon ce que t'as — haricots plats, courgette, chou chinois, champignons noirs.\\n\\n**Variante batch cooking** : le poulet velvet se congèle très bien après marinade. Décongeler au frigo, saisir direct.\\n\\n**Calories** : ~129 kcal/100g | ~459 kcal/portion (4 parts) | ~1834 kcal le total."
 ---
