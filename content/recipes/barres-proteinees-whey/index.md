@@ -33,9 +33,9 @@ ingredients:
       - qty: 1
         unit: càc
         item: "extrait de vanille"
-      - qty: 3
+      - qty: 5
         unit: càs
-        item: "eau"
+        item: "eau (ajuster si besoin)"
 directions:
   - "Dans un grand bol, mélanger la whey isolate, les flocons d'avoine et le collagène."
   - "Ajouter le beurre de cacahuète, le miel et l'extrait de vanille. Mélanger du bout des doigts jusqu'à obtenir une texture sableuse."
